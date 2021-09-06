@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:padding="5dip">
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dip"
+        android:paddingLeft="8dip"
+        android:paddingBottom="4dip"
+        android:textSize="18dip"
+        android:text="Student Name will appear here"
+        android:textColor="#ff2b53e4" />
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="38dip"
+        android:paddingLeft="8dip"
+        android:paddingBottom="6dip"
+        android:textSize="15dip"
+        android:text="Student Email"
+        android:textColor="#ff000003"/>
+    <TextView
+        android:id="@+id/lblMobile"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="38dip"
+        android:paddingLeft="178dip"
+        android:paddingBottom="6dip"
+        android:textSize="15dip"
+        android:text="Mobile"
+        android:textColor="#ff000003"/>
+           
+     <ImageView
+        android:layout_width="30dp"
+        android:layout_height="70dp"
+        android:src="@drawable/arrowright"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>
