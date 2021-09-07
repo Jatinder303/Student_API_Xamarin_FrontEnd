@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtItemStudentName"
+        android:hint="Enter Student Name"
+        android:layout_weight="0.1"
+        android:layout_margin="5dp" 
+        android:textColor="@android:color/background_dark"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center" >
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtItemEmail"
+        android:hint="Enter Email"
+        android:layout_weight="0.1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_margin="5dp" 
+        android:textColor="@android:color/background_dark" >
+    </EditText>
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtItemMobile"
+        android:hint="Enter Mobile"
+        android:layout_weight="0.1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_margin="5dp" 
+        android:textColor="@android:color/background_dark" >
+    </EditText>
+       
+    <Button
+        android:text="@string/Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAdd" 
+        android:layout_margin="5dp" 
+        android:layout_weight="0.05"/>
+</LinearLayout>

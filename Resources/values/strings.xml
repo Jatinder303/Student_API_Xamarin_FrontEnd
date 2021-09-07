@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">Student_API_Xamarin_FrontEnd</string>
+    <string name="app_name">Student Management System </string>
     <string name="action_settings">Settings</string>
+	<string name="Add">Add</string>
+	<string name="Delete">Delete</string>
+	<string name="Update">Update</string>
 </resources>
