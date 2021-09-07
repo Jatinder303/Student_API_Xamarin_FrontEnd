@@ -41,15 +41,16 @@ namespace Student_API_Xamarin_FrontEnd
             txt_Student_Mobile.Text = Intent.GetStringExtra("Student_Mobile");
             
             btn_Edit.Click += OnEdit_Click;
+            btn_Delete.Click += OnDelete_Click;
        }
 
         public void OnEdit_Click(object sender, EventArgs e)
         {
             if (txt_Student_Name.Text != "" && txt_Student_Email.Text != "" && txt_Student_Mobile.Text != "")
             {
-               // Toast.MakeText(this, Student_Id.ToString(), ToastLength.Long).Show();
+              
                 DatabaseManager.EditStudent(txt_Student_Name.Text, txt_Student_Email.Text, txt_Student_Mobile.Text, Student_Id);
-                Toast.MakeText(this, "Student data Updated", ToastLength.Long).Show();
+               Toast.MakeText(this, "Student data Updated", ToastLength.Long).Show();
                 this.Finish();
                 StartActivity(typeof(MainActivity));
             }
@@ -57,6 +58,15 @@ namespace Student_API_Xamarin_FrontEnd
             {
                 Toast.MakeText(this, "Please fill data in all fields", ToastLength.Long).Show();
             }
+        }
+
+        public void OnDelete_Click(object sender, EventArgs e)
+        {
+                DatabaseManager.DeleteStudent(Student_Id);
+                Toast.MakeText(this, "Student data is Deleted", ToastLength.Long).Show();
+                this.Finish();
+                StartActivity(typeof(MainActivity));
+           
         }
     }
 }

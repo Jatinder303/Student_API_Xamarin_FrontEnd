@@ -78,5 +78,18 @@ namespace Student_API_Xamarin_FrontEnd
                 Console.WriteLine("Update student Data Error " + e.Message);
             }
         }
+
+        public static void DeleteStudent(int Stud_Id)
+        {
+            try
+            {
+                var httpClient = new HttpClient();
+                httpClient.DeleteAsync(string.Format("http://10.0.2.2:3492/api/Students/{0}", Stud_Id));
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Delete student Data Error " + e.Message);
+            }
+        }
     }
 }
